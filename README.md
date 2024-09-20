@@ -63,30 +63,35 @@
 5. Копирование репозитория:
    
    git clone https://github.com/gleeebkaaa/newsLetterWhatsApp
+   
    cd newsLetterWhatsApp
 
-6. Установка зависимостей:
+7. Установка зависимостей:
    
    npm install
 
-7. Вставка ключей:
+8. Вставка ключей:
    
    nano inex.js
 
    ## Найдите и замените следующие строки:
    
    const token = 'ВАШ_ТОКЕН_TELEGRAM_БОТА';
+   
    const apiKey = 'ВАШ_API_КЛЮЧ';
+   
    const apiUrl = 'https://ВАШ_ID.api.green-api.com';
+   
    const idInstance = 'ВАШ_ID_ИНСТАНСА';
+   
 
    Сохраните изменения: Ctrl+X, затем Y, затем Enter
 
-8. Запуск бота:
+10. Запуск бота:
    
    node inex.js
 
-9. Использование бота:
+11. Использование бота:
     
    - Откройте вашего бота в Telegram
    - Отправьте команду /send с текстом сообщения для рассылки
