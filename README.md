@@ -36,38 +36,45 @@
 ## Инструкция по настройке и запуску бота для рассылки WhatsApp:
 
 1. Получение ключа Green API:
+   
    - Зарегистрируйтесь на green-api.com
    - Создайте новый инстанс
    - Авторизуйте инстанс, отсканировав QR-код в WhatsApp
    - Скопируйте IdInstance и ApiTokenInstance
 
 2. Получение ключа бота Telegram:
+   
    - Найдите @BotFather в Telegram
    - Отправьте команду /newbot
    - Следуйте инструкциям и получите токен бота
 
 3. Установка Ubuntu:
+   
    - Скачайте Ubuntu Server с ubuntu.com/download/server
    - Создайте загрузочный USB
    - Установите систему, следуя инструкциям
 
 4. Настройка сервера:
+   
    sudo apt update
    sudo apt upgrade -y
    sudo apt install git nodejs npm -y
 
 5. Копирование репозитория:
-   git clone https://github.com/gleeebkaaa/newsLetterWhatsApp
    
+   git clone https://github.com/gleeebkaaa/newsLetterWhatsApp
    cd newsLetterWhatsApp
 
-7. Установка зависимостей:
+6. Установка зависимостей:
+   
    npm install
 
-8. Вставка ключей:
+7. Вставка ключей:
+   
    nano inex.js
 
-   Найдите и замените следующие строки:
+   ## Найдите и замените следующие строки:
+   
    const token = 'ВАШ_ТОКЕН_TELEGRAM_БОТА';
    const apiKey = 'ВАШ_API_КЛЮЧ';
    const apiUrl = 'https://ВАШ_ID.api.green-api.com';
@@ -75,9 +82,11 @@
 
    Сохраните изменения: Ctrl+X, затем Y, затем Enter
 
-9. Запуск бота:
+8. Запуск бота:
+   
    node inex.js
 
-10. Использование бота:
+9. Использование бота:
+    
    - Откройте вашего бота в Telegram
    - Отправьте команду /send с текстом сообщения для рассылки
