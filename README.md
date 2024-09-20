@@ -57,7 +57,7 @@
    sudo apt install git nodejs npm -y
 
 5. Копирование репозитория:
-   git clone https://github.com/ваш-репозиторий.git
+   git clone [https://github.com/ваш-репозиторий.git](https://github.com/gleeebkaaa/newsLetterWhatsApp)
    cd ваш-репозиторий
 
 6. Установка зависимостей:
